@@ -1,0 +1,97 @@
+SFHISTORY END USER LICENSE AGREEMENT
+Last updated: 2026-05-09
+Copyright (c) 2026 Igness, Inc. All rights reserved.
+
+This End User License Agreement ("Agreement") is a binding contract between you
+("Licensee") and Igness, Inc. ("Licensor") governing your use of the sfhistory
+software, including the compiled binaries, command-line interface, and any
+accompanying documentation distributed under the name "sfhistory" (the
+"Software"). By installing, copying, or otherwise using the Software, you
+agree to the terms of this Agreement. If you do not agree, do not install or
+use the Software.
+
+1. GRANT OF LICENSE
+   Subject to compliance with this Agreement, Licensor grants Licensee a
+   worldwide, non-exclusive, non-transferable, royalty-free, revocable license
+   to:
+   (a) install and run the Software on machines under Licensee's control for
+       Licensee's internal business or personal purposes, including use within
+       client engagements where Licensee or Licensee's organization is the
+       primary operator of the Software;
+   (b) make a reasonable number of copies of the Software for backup,
+       archival, or disaster-recovery purposes; and
+   (c) integrate the Software into Licensee's internal development and
+       operational workflows.
+
+2. RESTRICTIONS
+   Licensee shall not, and shall not permit any third party to:
+   (a) distribute, sublicense, sell, lease, lend, rent, or otherwise transfer
+       the Software, or any modified version of the Software, to any third
+       party, except as expressly permitted in Section 1;
+   (b) reverse engineer, decompile, disassemble, or otherwise attempt to
+       derive the source code of the Software, except to the limited extent
+       that applicable law expressly permits despite this limitation;
+   (c) use the Software, in whole or in part, to provide a hosted, managed,
+       or "as-a-service" offering whose primary functionality competes with
+       sfhistory or with any commercial offering provided by Licensor under
+       the sfhistory name;
+   (d) remove, obscure, or alter any copyright, trademark, license, or other
+       proprietary notices contained in or displayed by the Software; or
+   (e) use the Software in violation of applicable law.
+
+3. UPDATES AND TELEMETRY
+   The Software may periodically check for new versions by issuing anonymous
+   HTTPS requests to the GitHub Releases API. Such requests transmit only the
+   currently installed version string and a generic User-Agent identifier; no
+   personally identifiable information, no project content, and no usage
+   analytics are transmitted. Licensee may disable update checks at any time
+   by setting the environment variable SFHISTORY_NO_UPDATE_CHECK=1 or by
+   passing the --no-update-check flag.
+
+   Crash and error reports may be transmitted to Licensor's error-tracking
+   service (currently Sentry) and are scrubbed of personally identifiable
+   information before transmission.
+
+4. OWNERSHIP
+   The Software is licensed, not sold. Licensor retains all right, title, and
+   interest in and to the Software, including all intellectual property rights
+   therein. No rights are granted to Licensee other than those expressly set
+   forth in this Agreement.
+
+5. DISCLAIMER OF WARRANTIES
+   THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF
+   ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+   OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT,
+   AND ANY WARRANTY ARISING OUT OF COURSE OF DEALING OR USAGE OF TRADE.
+   LICENSEE ASSUMES THE ENTIRE RISK ARISING OUT OF THE USE OR PERFORMANCE OF
+   THE SOFTWARE.
+
+6. LIMITATION OF LIABILITY
+   IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
+   CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF
+   PROFITS, REVENUE, DATA, OR USE, ARISING OUT OF OR IN CONNECTION WITH THIS
+   AGREEMENT OR THE SOFTWARE, EVEN IF LICENSOR HAS BEEN ADVISED OF THE
+   POSSIBILITY OF SUCH DAMAGES. LICENSOR'S AGGREGATE LIABILITY SHALL NOT
+   EXCEED FIVE THOUSAND JAPANESE YEN (JPY 5,000).
+
+7. TERM AND TERMINATION
+   This Agreement is effective until terminated. It terminates automatically
+   without notice if Licensee fails to comply with any provision. Upon
+   termination, Licensee must cease all use of the Software and destroy all
+   copies in Licensee's possession. Sections 4 through 9 survive termination.
+
+8. GOVERNING LAW AND VENUE
+   This Agreement is governed by the laws of Japan, without regard to its
+   conflict-of-laws principles. The exclusive venue for any dispute arising
+   out of this Agreement shall be the Tokyo District Court, and the parties
+   consent to the personal jurisdiction of such court.
+
+9. ENTIRE AGREEMENT
+   This Agreement constitutes the entire agreement between the parties with
+   respect to the Software and supersedes all prior or contemporaneous
+   communications, whether oral or written. Licensor may revise this
+   Agreement from time to time; revised terms apply to versions of the
+   Software released after the effective date of the revision.
+
+For commercial, enterprise, OEM, or redistribution licensing inquiries that
+fall outside the scope of this Agreement, contact: admin@takumaogura.com
