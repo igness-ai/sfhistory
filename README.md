@@ -16,7 +16,7 @@ git のコミットごとに、Salesforce の設定変更と AI との会話履�
 | Package manager | Command                                |
 | --------------- | -------------------------------------- |
 | Homebrew        | `brew install igness-ai/tap/sfhistory` |
-| npm             | `npm install -g sfhistory`             |
+| npm             | `npm install -g @igness/sfhistory`     |
 
 
 ## クイックスタート
