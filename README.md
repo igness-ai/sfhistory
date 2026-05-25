@@ -16,7 +16,7 @@ git のコミットごとに、Salesforce の設定変更と AI との会話履�
 | Package manager | Command                                |
 | --------------- | -------------------------------------- |
 | Homebrew        | `brew install igness-ai/tap/sfhistory` |
-| npm             | `npm install -g @igness/sfhistory`     |
+| npm             | `npm install -g @igness/sfhistory`  |
 
 
 ## クイックスタート
@@ -25,7 +25,8 @@ git のコミットごとに、Salesforce の設定変更と AI との会話履�
 sfhistory enable --target-org admin@dev-sandbox.com --yes
 git commit -am "your message"
 sfhistory log
-sfhistory sync <sha> --yes
+sfhistory sync <sha> --yes                                      # 全変更を一括
+sfhistory sync <sha> force-app/main/default/flows --yes         # 段階 sync (依存エラー時)
 sfhistory why <sha>
 ```
 
@@ -41,15 +42,17 @@ sfhistory why <sha>
 | `why <subject>`           | commit (SHA) または metadata の詳細 + AI 会話 |
 | `timeline <metadata>`     | metadata 変更を時系列で表示                    |
 | `search <query>`          | FTS5 全文検索（CJK 対応）                     |
-| `self-update`             | GitHub Releases から最新版へ更新              |
+| `update`                  | install 方法に応じて最新版へ更新                |
 
 
 すべて `--json` 対応。
+`search <query>` は `--limit <N>` で表示件数を制限できます（未指定なら全件）。
 
 ## アップデート
 
+update 方法は install 方法によって異なります。GitHub Release / installer で直接配置した standalone binary は `sfhistory update` で更新できます。Homebrew / npm / Cargo 経由で install した場合、`sfhistory update --check` が推奨コマンドを表示し、実際の更新は各 package manager に委任します。
+
 ```bash
-sfhistory self-update                   # 最新版へ
+sfhistory update                        # standalone install の最新版へ
 SFHISTORY_NO_UPDATE_CHECK=1 sfhistory   # 起動時通知を抑止
 ```
-
